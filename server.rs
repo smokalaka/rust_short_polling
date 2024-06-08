@@ -6,7 +6,7 @@ use std::time::Duration;
 const SERVER_ADDRESS: &str = "127.0.0.1:8080";
 const POLLING_INTERVAL: u64 = 50;
 
-pub fun main() -> std::io::Result<()> {
+pub fn main() -> std::io::Result<()> {
     let listener = TcpListener::bind(SERVER_ADDRESS);
     println!("Server listening on {}", SERVER_ADDRESS);
 
